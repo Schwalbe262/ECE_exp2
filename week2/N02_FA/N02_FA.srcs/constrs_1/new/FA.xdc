@@ -1,4 +1,4 @@
-set_property PACKAGE_PIN K8 [get_ports x]
+set_property PACKAGE_PIN K4 [get_ports x]
 set_property PACKAGE_PIN N8 [get_ports y]
 set_property PACKAGE_PIN N4 [get_ports z]
 set_property PACKAGE_PIN L4 [get_ports c]
