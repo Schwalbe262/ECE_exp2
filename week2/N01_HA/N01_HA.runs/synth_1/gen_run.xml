@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1657710933" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HA.dcp">
   <File Type="PA-TCL" Name="HA.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="HA_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="HA_reports.tcl"/>
   <File Type="RDS-RDS" Name="HA.vds"/>
   <File Type="RDS-UTIL" Name="HA_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="HA_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="HA.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="HA_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="HA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/HA_assign.v">
@@ -60,9 +57,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
