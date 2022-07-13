@@ -1,5 +1,7 @@
 # .gitignore
 # ignore All
+*
+!*/
 
 # Allow list
 !.git/*
