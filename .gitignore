@@ -6,5 +6,5 @@
 # Allow list
 !.gitignore
 !.gitattributres
-!.v
-!.xdc
+!*.v
+!*.xdc
