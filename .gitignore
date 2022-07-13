@@ -1,0 +1,11 @@
+# .gitignore
+# ignore All
+
+# Allow list
+!.git/*
+!.gitignore
+!.gitattributres
+!.v
+!.bit
+!.xdc
+!.dcp
