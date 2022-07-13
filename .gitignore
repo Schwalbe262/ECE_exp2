@@ -4,7 +4,6 @@
 !*/
 
 # Allow list
-!.git/*
 !.gitignore
 !.gitattributres
 !.v
