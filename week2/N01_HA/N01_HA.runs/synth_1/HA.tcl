@@ -71,7 +71,9 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 8
 set_param synth.incrementalSynthesisCache C:/Users/tsne/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16884-DESKTOP-RMS1URL/incrSyn
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -98,6 +100,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/git/ECE_exp2/week2/N01_HA/N01_HA.srcs/constrs_1/new/HA.xdc
+set_property used_in_implementation false [get_files C:/git/ECE_exp2/week2/N01_HA/N01_HA.srcs/constrs_1/new/HA.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental C:/git/ECE_exp2/week2/N01_HA/N01_HA.srcs/utils_1/imports/synth_1/HA.dcp
