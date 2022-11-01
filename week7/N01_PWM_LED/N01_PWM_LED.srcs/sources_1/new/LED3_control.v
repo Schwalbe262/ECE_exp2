@@ -11,12 +11,12 @@ output reg [3:0] led_signal_G;
 output reg [3:0] led_signal_B;
 
 parameter red    = {8'd255, 8'd0  , 8'd0  };
-parameter orange = {8'd255, 8'd120, 8'd0  };
+parameter orange = {8'd255, 8'd102, 8'd0  };
 parameter yellow = {8'd255, 8'd255, 8'd0  };
 parameter green  = {8'd0  , 8'd255, 8'd0  };
 parameter blue   = {8'd0  , 8'd0  , 8'd255};
-parameter indigo = {8'd0  , 8'd30  , 8'd160};
-parameter purple = {8'd100, 8'd0  , 8'd255};
+parameter indigo = {8'd0  , 8'd0  , 8'd128};
+parameter purple = {8'd128, 8'd0  , 8'd128};
 parameter white  = {8'd255, 8'd255, 8'd255};
 
 counter8 c1(clk, rst, cnt);

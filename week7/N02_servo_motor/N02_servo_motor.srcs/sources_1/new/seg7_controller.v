@@ -9,6 +9,7 @@ reg [3:0] display_bcd;
 output reg [7:0] seg_data;
 output reg [7:0] seg_sel;
 
+
 bin2bcd b1(clk, rst, bin, bcd);
 
 always @(posedge clk or posedge rst) begin
@@ -33,7 +34,6 @@ always @(*) begin
         default : seg_data = 8'b00000000; 
     endcase
 end
-
 always @(*) begin
     case(seg_sel)
         8'b11111110 : display_bcd = bcd[3:0];
@@ -50,5 +50,3 @@ end
 
     
 endmodule
-
-

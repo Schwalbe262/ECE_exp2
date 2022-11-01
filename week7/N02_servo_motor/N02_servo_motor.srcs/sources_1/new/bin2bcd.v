@@ -33,6 +33,3 @@ always @(posedge rst or posedge clk) begin
 end
 
 endmodule
-
-
-
